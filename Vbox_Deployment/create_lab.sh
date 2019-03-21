@@ -14,7 +14,7 @@ do
     /mnt/c/Program\ Files/Oracle/VirtualBox/VBoxManage.exe  storageattach $i --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium 'C:\Users\miker\VirtualBox VMs\'$i'\'$i'.vdi'
     /mnt/c/Program\ Files/Oracle/VirtualBox/VBoxManage.exe  storagectl $i --name "IDE Controller" --add ide
     /mnt/c/Program\ Files/Oracle/VirtualBox/VBoxManage.exe  modifyvm $i --memory 1024 --vram 128
-    /mnt/c/Program\ Files/Oracle/VirtualBox/VBoxManage.exe  modifyvm $i --hostonlyadapter4 "VirtualBox Host-Only Ethernet Adapter"
+    /mnt/c/Program\ Files/Oracle/VirtualBox/VBoxManage.exe  modifyvm $i --hostonlyadapter4 "VirtualBox Host-Only Ethernet Adapter #2"
     /mnt/c/Program\ Files/Oracle/VirtualBox/VBoxManage.exe  modifyvm $i --nic4 hostonly
     echo ""
     echo "Starting VM"
